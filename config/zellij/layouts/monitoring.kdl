@@ -1,0 +1,31 @@
+layout {
+    // normal tab bar + status bar UI
+    default_tab_template {
+        // top: tab bar
+        pane size=1 borderless=true {
+          plugin location="zellij:tab-bar"
+        }
+
+        // two vertical panes (left & right)
+        pane split_direction="vertical" {
+            // LEFT column: 2 vertical panes
+            pane split_direction="vertical" size="80%"{
+              pane                             // shell
+              pane                             // shell
+            }
+
+            // RIGHT column: 3 horizontal panes
+            pane split_direction="horizontal" {
+              pane                              // top-right: shell
+              pane command="htop"               // middle-right: htop 
+              pane command="nvtop"              // bottom-right: nvtop 
+            }
+        }
+
+        // bottom: status bar
+        pane size=1 borderless=true {
+          plugin location="zellij:status-bar"
+        }
+    }
+}
+
