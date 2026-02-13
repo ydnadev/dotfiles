@@ -1,0 +1,21 @@
+= README
+
+How to get work done.
+
+
+== Tools
+
+=== SysAdmin
+
+* Desktop - Pop!_Os: This works for GPU based systems with minimal config. Plus it has native tiling.
+* Server - Ubuntu LTS: Solid and simple with many available tools.
+
+=== Dev
+
+* Neovim - VIM with plugins.
+
+
+=== Data
+
+
+=== ML/AI
